@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.4;
+}
+a {
+  text-decoration: none;
+}
+
+.bg-primary {
+  color: #93cb52;
+}
+.logo-color {
+  color: #93cb52;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1;
+  padding: 20px;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 4px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url("../img/showcase.jpg") no-repeat center center/cover;
+  color: #fff;
+  height: 100vh;
+}
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* overlay */
+  position: absolute;
+  top: 74px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+.l-heading {
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+.lead {
+  font-size: 20px;
+  margin-bottom: 35px;
+  max-width: 70%;
+}
+.btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #93cb52;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #7ab436;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+/* Section what we do */
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.text-center {
+  text-align: center;
+}
+.m-heading {
+  font-size: 25px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+.py-1 {
+  padding: 20px 0;
+}
+
+.items {
+  display: flex;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.item {
+  flex-grow: 1;
+  text-align: center;
+  flex-basis: 300px;
+  padding: 1rem;
+}
+.item i {
+  background: #93cb52;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Section who we are */
+
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.p-2 {
+  padding: 1.5rem;
+}
+
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 1px dotted;
+}
+
+#client .client-items {
+  display: flex;
+}
+#client .client-items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+/* Contact */
+.bg-contact {
+  background: #93cb52;
+  color: #fff;
+}
+
+#contact {
+  display: flex;
+}
+.contact-form,
+.map {
+  flex: 1;
+}
+
+.from-group {
+  margin: 0.75rem;
+}
+
+.contact-form label {
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+}
